@@ -9,7 +9,7 @@ function Projects() {
       <div className="row g-3 justify-content-center">
         {projects.map((project, index) => (
           <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
-            <Card title={project.title} description={project.description} imageUrl={project.imageUrl} linkUrl={project.linkUrl} />
+            <Card title={project.title} description={project.description} imageUrl={project.imageUrl} linkUrl={project.linkUrl} isNewTab={project.isNewTab} />
           </div>
         ))}
       </div>

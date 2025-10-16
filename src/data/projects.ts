@@ -8,7 +8,8 @@ const projects = [
   {
     title: "Portfolio",
     description: "Esto parece un poco redundante, ¿no?",
-    linkUrl: "#"
+    linkUrl: "#",
+    isNewTab: false
   },
   {
     title: "Curriculum vitae",

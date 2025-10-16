@@ -5,13 +5,21 @@ export interface CardProps {
   description?: string,
   imageUrl?: string,
   linkUrl: string
+  isNewTab?: boolean
 }
 
-function Card({title, description, imageUrl, linkUrl}: Readonly<CardProps>) {
+function Card(
+  {
+    title,
+    description,
+    imageUrl,
+    linkUrl,
+    isNewTab = true
+  }: Readonly<CardProps>) {
 
   return (
     <>
-      <a href={linkUrl}>
+      <a href={linkUrl} target={isNewTab ? "_blank" : "_self"} rel="noreferrer">
         <div className="card">
           {imageUrl && (
             <figure>
