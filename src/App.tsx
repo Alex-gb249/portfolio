@@ -1,7 +1,7 @@
 import './App.css'
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
-import Portfolio from './pages/Portfolio'
+import Projects from './pages/Projects'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <div className='all prevent-select'>
         <Header />
-        <Portfolio />
+        <Projects />
         <Footer />
       </div>
     </>
