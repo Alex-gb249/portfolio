@@ -2,7 +2,7 @@ const projects = [
   {
     title: "Pomodoro",
     description: "A pomodoro based task manager",
-    imageUrl: "pomodoro.webp",
+    imageUrl: "pomodoro-page.webp",
     linkUrl: "https://pomodoro.axelis.dev"
   },
   {
@@ -14,6 +14,7 @@ const projects = [
   {
     title: "Curriculum vitae",
     description: "Sitio donde puedes visualizar y descargar mi CV",
+    imageUrl: "cv-page.webp",
     linkUrl: "https://cv.axelis.dev"
   },
 ]
