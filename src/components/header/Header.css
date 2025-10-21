@@ -1,5 +1,7 @@
-.logo {
-  height: 32px;
-  width: 32px;
-  image-rendering: pixelated;
+nav {
+  background-color: var(--color-light-blue);
+}
+
+.header-title {
+  color: var(--color-main);
 }

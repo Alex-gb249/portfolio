@@ -1,9 +1,10 @@
 .card {
+  background-color: var(--color-lighter-blue);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px var(--color-light-blue);
   transform: translateY(-5px);
 }
 
