@@ -1,22 +1,24 @@
-const projects = [
+import type { Project } from "../types/Projects";
+
+const initialProjects: Project[] = [
   {
     title: "Pomodoro",
     description: "A pomodoro based task manager",
     imageUrl: "pomodoro-page.webp",
-    linkUrl: "https://pomodoro.axelis.dev"
+    url: "https://pomodoro.axelis.dev"
   },
   {
     title: "Portfolio",
     description: "Esto parece un poco redundante, ¿no?",
-    linkUrl: "#",
+    url: "#",
     isNewTab: false
   },
   {
     title: "Curriculum vitae",
     description: "Sitio donde puedes visualizar y descargar mi CV",
     imageUrl: "cv-page.webp",
-    linkUrl: "https://cv.axelis.dev"
+    url: "https://cv.axelis.dev"
   },
-]
+];
 
-export default projects
+export default initialProjects;
