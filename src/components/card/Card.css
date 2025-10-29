@@ -1,5 +1,5 @@
 .card {
-  background-color: var(--color-lighter-blue);
+  background-color: var(--color-light-blue);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 

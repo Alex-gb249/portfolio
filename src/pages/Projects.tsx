@@ -10,7 +10,7 @@ function Projects() {
       <h1 className="text-center mb-3">Projects</h1>
       <div className="row g-3 justify-content-center">
         {projects.map((project, index) => (
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
+          <div className="col-12 col-sm-6 col-lg-3 col-xl-2" key={index}>
             <Card title={project.title} description={project.description} imageUrl={project.imageUrl} url={project.url} isNewTab={project.isNewTab} />
           </div>
         ))}

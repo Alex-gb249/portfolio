@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: var(--color-lighter-blue);
   margin: 0;
 }
 
