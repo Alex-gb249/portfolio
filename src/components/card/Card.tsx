@@ -13,8 +13,8 @@ function Card(
     title,
     description,
     imageUrl,
-    url,
-    isNewTab = true
+    // url,
+    // isNewTab = true
   }: Readonly<CardProps>) {
 
   return (
