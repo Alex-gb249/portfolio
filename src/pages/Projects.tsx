@@ -1,19 +1,34 @@
 import { useContext } from "react"
 import Card from "../components/card/Card"
 import { ProjectsContext } from "../contexts/ProjectsContext"
+import PageVisualizer from "../components/page-visualizer/PageVisualizer";
+import { Project } from "../types/Projects";
 
 function Projects() {
-  const { projects } = useContext(ProjectsContext);
+  const { projects, setSelectedProject } = useContext(ProjectsContext);
+
+  const handleOnClick = (project: Project) => () => {
+    setSelectedProject(project);
+  }
 
   return (
-    <div className="p-4">
+    <div className="p-4 d-flex flex-column">
       <h1 className="text-center mb-3">Projects</h1>
-      <div className="row g-3 justify-content-center">
-        {projects.map((project, index) => (
-          <div className="col-12 col-sm-6 col-lg-3 col-xl-2" key={index}>
-            <Card title={project.title} description={project.description} imageUrl={project.imageUrl} url={project.url} isNewTab={project.isNewTab} />
+      <div className="row flex-grow-1"> 
+        <div className="col-3">
+          <div className="row g-3 justify-content-center">
+            {projects.map((project, index) => (
+              <div className="" key={index}>
+                <a onClick={handleOnClick(project)}>
+                  <Card title={project.title} description={project.description} imageUrl={project.imageUrl} url={project.url} isNewTab={project.isNewTab} />
+                </a>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+        <div className="col">
+          <PageVisualizer />
+        </div>
       </div>
     </div>
   )
