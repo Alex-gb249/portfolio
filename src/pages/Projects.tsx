@@ -12,10 +12,10 @@ function Projects() {
   }
 
   return (
-    <div className="p-4 d-flex flex-column">
+    <div className="py-4 p-xl-4 d-flex flex-column">
       <h1 className="text-center mb-3">Projects</h1>
       <div className="row flex-grow-1"> 
-        <div className="col-3">
+        <div className="col-12 col-xl-3 p-4 p-xl-0">
           <div className="row g-3 justify-content-center">
             {projects.map((project, index) => (
               <div className="" key={index}>
@@ -26,7 +26,7 @@ function Projects() {
             ))}
           </div>
         </div>
-        <div className="col">
+        <div className="col-12 col-md">
           <PageVisualizer />
         </div>
       </div>
