@@ -4,19 +4,20 @@ const initialProjects: Project[] = [
   {
     title: "Pomodoro",
     description: "A pomodoro based task manager",
-    imageUrl: "pomodoro-page.webp",
+    imageUrl: "pomodoro-logo.png",
     url: "https://pomodoro.axelis.dev"
   },
   {
     title: "Portfolio",
     description: "Esto parece un poco redundante, ¿no?",
-    url: "#",
+    imageUrl: "pomodoro-logo.png",
+    url: "https://axelis.dev",
     isNewTab: false
   },
   {
     title: "Curriculum vitae",
     description: "Sitio donde puedes visualizar y descargar mi CV",
-    imageUrl: "cv-page.webp",
+    imageUrl: "pomodoro-logo.png",
     url: "https://cv.axelis.dev"
   },
 ];
